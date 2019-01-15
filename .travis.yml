@@ -10,6 +10,8 @@ script:
 - cd docker
 - docker exec -ti decide_web ./manage.py test store
 - cd ..
+  on:
+      branch: master
 notifications:
   email: false
 before_install:
