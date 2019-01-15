@@ -8,10 +8,8 @@ services:
 - docker
 script:
 - cd docker
-- docker exec -ti decide_web ./manage.py test store
+- docker exec -ti decide_web ./manage.py test
 - cd ..
-  on:
-      branch: master
 notifications:
   email: false
 before_install:
